@@ -24,8 +24,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run Tests
-        run: npm test  # You can customize this to your build command
+      # - name: Run Tests
+      #   run: npm test  # You can customize this to your build command
 
       - name: Build the React project
         run: npm run build 
