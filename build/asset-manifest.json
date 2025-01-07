@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/test_repo/static/css/main.ca67ef22.css",
+    "main.js": "/test_repo/static/js/main.8201241f.js",
+    "static/js/453.afcc786d.chunk.js": "/test_repo/static/js/453.afcc786d.chunk.js",
+    "static/media/PRAEFERRE-Logo_Black.png": "/test_repo/static/media/PRAEFERRE-Logo_Black.4b14d5d2828d0f4f8667.png",
+    "static/media/logo.png": "/test_repo/static/media/logo.4b14d5d2828d0f4f8667.png",
+    "index.html": "/test_repo/index.html",
+    "main.ca67ef22.css.map": "/test_repo/static/css/main.ca67ef22.css.map",
+    "main.8201241f.js.map": "/test_repo/static/js/main.8201241f.js.map",
+    "453.afcc786d.chunk.js.map": "/test_repo/static/js/453.afcc786d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ca67ef22.css",
+    "static/js/main.8201241f.js"
+  ]
+}
