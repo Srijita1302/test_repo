@@ -29,9 +29,8 @@
     flex-direction: column;
     gap: 45px;
 }
-.login-button{
+
+.login-button {
     background-color: rgb(39, 211, 56);
-    
+
 }
-
-
