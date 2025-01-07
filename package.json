@@ -20,7 +20,7 @@
     "react-gauge-chart": "^0.5.1",
     "react-google-charts": "^5.2.1",
     "react-hook-form": "^7.53.2",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^3.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -48,6 +48,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "eslint": "^8.57.1"
   }
 }
