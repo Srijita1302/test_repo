@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       {/* <DashboardChart /> */}
-      <Login/>
+      <Login />
     </div>
   );
 }
