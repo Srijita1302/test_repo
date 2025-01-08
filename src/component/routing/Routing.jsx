@@ -1,35 +1,35 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, lazy } from 'react';
 import {
     createBrowserRouter,
     RouterProvider,
     Navigate,
 } from "react-router-dom";
-import Login from '../login/Login';
-import DashboardChart from '../dashboard/DashboardChart';
 
+// Lazy load the Login component
+const Login = lazy(() => import('../login/Login'));
 
 function Routing() {
-
+    // Define the router
     const router = createBrowserRouter([
         {
             path: '/',
-            element: <Navigate to="/login" replace />,
+            element: <Navigate to="/login" replace />, // Redirect from '/' to '/login'
         },
         {
             path: '/login',
-            element: <Login />,
+            element: (
+                <Suspense fallback={<div>Loading Login...</div>}>
+                    <Login />
+                </Suspense>
+            ), // Lazy-loaded Login component with fallback
         },
         {
-            path: '/dashboardChart',
-            element: <DashboardChart />,
+            path: '*',
+            element: <div>404 - Page Not Found</div>, // Handle unmatched routes
         },
     ]);
 
-    return (
-        <Suspense fallback={<div>Loading...</div>}>
-            <RouterProvider router={router} />
-        </Suspense>
-    )
+    return <RouterProvider router={router} />;
 }
 
 export default Routing;

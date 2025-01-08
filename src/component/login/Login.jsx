@@ -2,7 +2,7 @@ import React, { useState } from "react";
 // import { material } from '../../library/material';
 // import './Login.css'
 // import { useForm } from "react-hook-form";
-// import { Navigate, useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 // import image from '../../assets/PRAEFERRE-Logo_Black.png';
 // import { height } from '@mui/system';
 import logo from "../../assets/logo.png";
@@ -16,12 +16,14 @@ import {
   Typography,
 } from "@mui/material";
 import { AccountCircle, Visibility, VisibilityOff } from "@mui/icons-material";
+// import { useNavigate } from "react-router-dom";
 // import Grid2 from '@mui/material/Unstable_Grid2'; // For MUI v5
 // import Grid2 from '@mui/material';
 // import Grid from '@mui/material/Grid2';
 
 function Login() {
   // const { register, handleSubmit, reset, formState: { errors, isValid } } = useForm();
+  const navigate = useNavigate();
   const [type, setType] = useState("password");
   const [isVisible, setIsVisible] = useState(false);
   const [userId, setUserId] = useState("");
@@ -39,6 +41,7 @@ function Login() {
   }
 
   const login = (data) => {
+    navigate("/dashboardChart")
     console.log(data);
   };
 
@@ -133,7 +136,7 @@ function Login() {
               }}
               disabled={userId === "" || password === ""}
             >
-              Login
+              login
             </Button>
           </Box>
           <Typography
@@ -153,3 +156,16 @@ function Login() {
 }
 
 export default Login;
+
+// import React from 'react'
+
+// function Login() {
+//   return (
+//     <div>
+//       "aaaaaaaaaa"
+//     </div>
+//   )
+// }
+
+// export default Login
+
